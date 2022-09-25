@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*adicionando as fontes Passion One e a Sriracha*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500;600;700&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Righteous&family=Roboto:wght@400;700&family=Sarala:wght@400;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500;600;700&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Righteous&family=Roboto:wght@400;700&family=Sarala:wght@400;700&family=Sriracha&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Zerando margens e padddings do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;    
+}
+
+/*Título do header*/
+#tituloprincipal{
+    
+    font-family:'Passion one','Cursive';
+    font-variant: small-caps;
+    font-size: 10vw;
+    padding-top: 50px;
+}
+
+header>p{
+    padding-bottom: 50px;    
+}
+
+/*Deixando links sem sublinhado e afins*/
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;    
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*classe para formatar as sections em geral para gerar parallax*/
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+    font-size: 3.2vw;
+}
+
+/*classe para formatar as sections sem imagens*/
+.conteiner-normal{
+    background-color: white;
+    color: black;
+    font-family: 'Sriracha','cursive';
+    padding-bottom: 2em;
+    
+}
+
+/*classe para formatar as sections com imagens*/
+.conteiner-imagem{
+    background-color: rgb(53, 52, 52);
+    color: white;
+    font-family: 'Sriracha','cursive';
+    padding-bottom: 2em;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    
+}
+
+.conteiner-imagem>p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    box-shadow: 1px 1px 0px black;
+}
+
+/*Tratando as imagens*/
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Rodapé*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;    
+    padding: 12px;
+}
